@@ -13,6 +13,8 @@ Welcome to KFDE doc POC's documentation!
 
 
    docs/*
+   docs/fury-kubernetes-template-module/v0.0.1/releases/*
+
 
 
 
