@@ -19,10 +19,18 @@ module.exports = {
       items: [
         {
           type: 'docsVersionDropdown',
+          position: 'right'
+          // label: 'Fury'
         },
         {
           type: 'docsVersionDropdown',
           docsPluginId: 'dummymodule',
+          // label: 'Dummy Module'
+        },
+        {
+          type: 'docsVersion',
+          docsPluginId: 'fury-kubernetes-template-module',
+          label: 'Fury Template Module'
         },
         {
           type: 'doc',
@@ -113,6 +121,16 @@ module.exports = {
       id: 'dummymodule',
       path: 'dummymodule',
       routeBasePath: 'dummymodule',
+      sidebarPath: require.resolve('./sidebarsDummy.js'),
+      // ... other options
+    },
+  ],
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'fury-kubernetes-template-module',
+      path: 'fury-kubernetes-template-module',
+      routeBasePath: 'fury-kubernetes-template-module',
       sidebarPath: require.resolve('./sidebarsDummy.js'),
       // ... other options
     },
